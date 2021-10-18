@@ -1,0 +1,48 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 200px;
+  width: 75%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: 45px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 5%;
+}
+
+.subtitle {
+  font-size: 23px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 10%;
+}
+
+.text {
+  font-size: 16px;
+  color: rgb(105, 105, 105);
+  font-weight: 200;
+  margin-bottom: 5%;
+  text-decoration: none;
+}
+
+.smallContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15%;
+}
+
+.link {
+  font-size: 16px;
+  color: rgb(0, 151, 238);
+  font-weight: 200;
+  margin-bottom: 5%;
+  text-decoration: none;
+}
