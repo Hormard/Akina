@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Stage 1 ",
+    "date": "10 november",
+    "place": "Minsk"
+  },
+  {
+    "id": 2,
+    "title": "Stage 2 ",
+    "date": "17 november",
+    "place": "Slutsk"
+  },
+  {
+    "id": 3,
+    "title": "Stage 3 ",
+    "date": "27 november",
+    "place": "Minsk"
+  },
+  {
+    "id": 4,
+    "title": "Stage 4 ",
+    "date": "7 december",
+    "place": "Minsk"
+  },
+  {
+    "id": 5,
+    "title": "Stage 5 ",
+    "date": "21 december",
+    "place": "Grodno"
+  }
+]

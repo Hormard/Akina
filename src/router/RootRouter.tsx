@@ -1,33 +1,49 @@
-import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Link, Switch, Route, NavLink } from "react-router-dom";
 import styles from "./Router.module.css";
-import { CalendarSvg, MediaSvg } from "../assets/svg";
-import { DocumentsSvg, MailSvg } from "../assets/svg/sgv";
+import { ShopSvg, MailSvg, CalendarSvg, MediaSvg } from "../assets/svg/sgv";
 import { Home } from "../components/Home";
 import { ContactUs } from "../components/ContactUs";
+import { Events } from "../components/Events";
+import { Media } from "../components/Media";
+import { Shop } from "../components/Shop";
+import { SignUp } from "../components/SignUp";
 
 export function RootRouter() {
   return (
     <BrowserRouter>
       <nav className={styles.nav}>
         <Link className={styles.home_link} to="/">
-          MATSURI
+          AKINA-DRIFT
         </Link>
         <div className={styles.other}>
-          <Link className={styles.link} to="/calendar">
-            <CalendarSvg /> Shop
-          </Link>
-          <Link className={styles.link} to="/media">
+          <NavLink
+            activeStyle={{ borderBottom: "2px solid rgb(22, 157, 247)" }}
+            className={styles.link}
+            to="/media"
+          >
             <MediaSvg /> Media
-          </Link>
-          <Link className={styles.link} to="/calendar">
+          </NavLink>
+          <NavLink
+            activeStyle={{ borderBottom: "2px solid rgb(22, 157, 247)" }}
+            className={styles.link}
+            to="/events"
+          >
             <CalendarSvg /> Events
-          </Link>
-          <Link className={styles.link} to="/documents">
-            <DocumentsSvg /> Documents
-          </Link>
-          <Link className={styles.link} to="/contacts">
+          </NavLink>
+          <NavLink
+            activeStyle={{ borderBottom: "2px solid rgb(22, 157, 247)" }}
+            className={styles.link}
+            to="/shop"
+          >
+            <ShopSvg /> Market
+          </NavLink>
+          <NavLink
+            activeStyle={{ borderBottom: "2px solid rgb(22, 157, 247)" }}
+            className={styles.link}
+            to="/contacts"
+          >
             <MailSvg /> Contact us
-          </Link>
+          </NavLink>
         </div>
       </nav>
       <Switch>
@@ -35,16 +51,19 @@ export function RootRouter() {
           <Home />
         </Route>
         <Route exact path="/media">
-          <div>Картинки и видосы</div>
+          <Media />
         </Route>
-        <Route exact path="/calendar">
-          <div>Календарь ивентов</div>
+        <Route exact path="/events">
+          <Events />
         </Route>
-        <Route exact path="/documents">
-          <div>Документы</div>
+        <Route exact path="/market">
+          <Shop />
         </Route>
         <Route exact path="/contacts">
           <ContactUs />
+        </Route>
+        <Route exact path="/signUp/:id">
+          <SignUp />
         </Route>
       </Switch>
     </BrowserRouter>
