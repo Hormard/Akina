@@ -1,4 +1,3 @@
-import { Footer } from "../Footer";
 import style from "./ContactUs.module.css";
 
 export function ContactUs() {
@@ -45,7 +44,6 @@ export function ContactUs() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

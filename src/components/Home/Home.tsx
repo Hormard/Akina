@@ -1,7 +1,6 @@
 import styles from "./Home.module.css";
 import { CircleSvg, FlagSvg, StickSvg } from "../../assets/svg/sgv";
 import { Slider } from "../Slider";
-import { Footer } from "../Footer";
 import { Weather } from "../Weather";
 
 export function Home() {
@@ -41,7 +40,6 @@ export function Home() {
         </div>
       </div>
       <Weather />
-      <Footer />
     </>
   );
 }

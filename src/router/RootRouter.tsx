@@ -7,6 +7,11 @@ import { Events } from "../components/Events";
 import { Media } from "../components/Media";
 import { Shop } from "../components/Shop";
 import { SignUp } from "../components/SignUp";
+import { Footer } from "../components/Footer";
+
+const active: React.CSSProperties = {
+  borderBottom: "2px solid rgb(22, 157, 247)",
+};
 
 export function RootRouter() {
   return (
@@ -16,32 +21,16 @@ export function RootRouter() {
           AKINA-DRIFT
         </Link>
         <div className={styles.other}>
-          <NavLink
-            activeStyle={{ borderBottom: "2px solid rgb(22, 157, 247)" }}
-            className={styles.link}
-            to="/media"
-          >
+          <NavLink activeStyle={active} className={styles.link} to="/media">
             <MediaSvg /> Media
           </NavLink>
-          <NavLink
-            activeStyle={{ borderBottom: "2px solid rgb(22, 157, 247)" }}
-            className={styles.link}
-            to="/events"
-          >
+          <NavLink activeStyle={active} className={styles.link} to="/events">
             <CalendarSvg /> Events
           </NavLink>
-          <NavLink
-            activeStyle={{ borderBottom: "2px solid rgb(22, 157, 247)" }}
-            className={styles.link}
-            to="/shop"
-          >
+          <NavLink activeStyle={active} className={styles.link} to="/shop">
             <ShopSvg /> Market
           </NavLink>
-          <NavLink
-            activeStyle={{ borderBottom: "2px solid rgb(22, 157, 247)" }}
-            className={styles.link}
-            to="/contacts"
-          >
+          <NavLink activeStyle={active} className={styles.link} to="/contacts">
             <MailSvg /> Contact us
           </NavLink>
         </div>
@@ -49,18 +38,23 @@ export function RootRouter() {
       <Switch>
         <Route exact path="/">
           <Home />
+          <Footer />
         </Route>
         <Route exact path="/media">
           <Media />
+          <Footer />
         </Route>
         <Route exact path="/events">
           <Events />
+          <Footer />
         </Route>
         <Route exact path="/market">
           <Shop />
+          <Footer />
         </Route>
         <Route exact path="/contacts">
           <ContactUs />
+          <Footer />
         </Route>
         <Route exact path="/signUp/:id">
           <SignUp />

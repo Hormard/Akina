@@ -48,7 +48,7 @@ export function Slider() {
     }
   };
 
-  const onclickSlide = (id: number) => {
+  const onClickSlide = (id: number) => {
     if (id === 0) {
       history.push(`/signUp/${id}`);
     } else if (id === 1) {
@@ -84,7 +84,7 @@ export function Slider() {
           return (
             <Slide
               key={slide.id}
-              onClickSlide={onclickSlide}
+              onClickSlide={onClickSlide}
               id={slide.id}
               src={slide.src}
               title={slide.title}

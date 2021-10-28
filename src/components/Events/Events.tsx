@@ -1,4 +1,3 @@
-import { Footer } from "../Footer";
 import events from "./events.json";
 import styles from "./Events.module.css";
 
@@ -26,7 +25,6 @@ export function Events() {
           })}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

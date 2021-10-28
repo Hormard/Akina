@@ -1,4 +1,3 @@
-import { Footer } from "../Footer";
 import styles from "./Media.module.css";
 import images from "./images.json";
 import { useState } from "react";
@@ -8,18 +7,18 @@ export function Media() {
   const [type, setType] = useState("All" || "Lipki" || "Pro-2");
   const [renderedImages, setImages] = useState(images);
 
-  const onclickAll = () => {
+  const onClickAll = () => {
     setImages(images);
     setType("All");
   };
 
-  const onclickLipki = () => {
+  const onClickLipki = () => {
     setType("Lipki");
     const filtredImages = images.filter((item) => item.type === "Lipki");
     setImages(filtredImages);
   };
 
-  const onclickPro = () => {
+  const onClickPro = () => {
     setType("Pro-2");
     const filtredImages = images.filter((item) => item.type === "Pro-2");
     setImages(filtredImages);
@@ -51,19 +50,19 @@ export function Media() {
         <div className={styles.controller}>
           <button
             className={type === "All" ? styles.activated_button : styles.button}
-            onClick={onclickAll}
+            onClick={onClickAll}
           >
             All
           </button>
           <button
             className={type === "Lipki" ? styles.activated_button : styles.button}
-            onClick={onclickLipki}
+            onClick={onClickLipki}
           >
             Lipki drift
           </button>
           <button
             className={type === "Pro-2" ? styles.activated_button : styles.button}
-            onClick={onclickPro}
+            onClick={onClickPro}
           >
             Pro-2
           </button>
@@ -100,7 +99,6 @@ export function Media() {
           ></iframe>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

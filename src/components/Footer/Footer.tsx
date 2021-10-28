@@ -1,6 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Footer.module.css";
 
+const active: React.CSSProperties = {
+  borderBottom: "1px solid rgb(22, 157, 247)",
+};
+
 export function Footer() {
   return (
     <div className={styles.footer}>
@@ -25,32 +29,16 @@ export function Footer() {
             <Link className={styles.link} to="/">
               Home
             </Link>
-            <NavLink
-              activeStyle={{ borderBottom: "1px solid rgb(22, 157, 247)" }}
-              className={styles.link}
-              to="/media"
-            >
+            <NavLink activeStyle={active} className={styles.link} to="/media">
               Media
             </NavLink>
-            <NavLink
-              activeStyle={{ borderBottom: "1px solid rgb(22, 157, 247)" }}
-              className={styles.link}
-              to="/events"
-            >
+            <NavLink activeStyle={active} className={styles.link} to="/events">
               Events
             </NavLink>
-            <NavLink
-              activeStyle={{ borderBottom: "1px solid rgb(22, 157, 247)" }}
-              className={styles.link}
-              to="/market"
-            >
+            <NavLink activeStyle={active} className={styles.link} to="/market">
               Shop
             </NavLink>
-            <NavLink
-              activeStyle={{ borderBottom: "1px solid rgb(22, 157, 247)" }}
-              className={styles.link}
-              to="/contacts"
-            >
+            <NavLink activeStyle={active} className={styles.link} to="/contacts">
               Contact us
             </NavLink>
           </div>
