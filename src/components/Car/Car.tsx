@@ -15,7 +15,7 @@ export function Car() {
 
   const params: IParams = useParams();
   const id: number = Number(params.id);
-  const car = cars[id];
+  const car = cars[id - 1];
 
   useEffect(() => {
     window.scrollTo(0, 0);
