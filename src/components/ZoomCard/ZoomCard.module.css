@@ -1,0 +1,51 @@
+.dark {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.699);
+  z-index: 99999998;
+}
+
+.big_container {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999999;
+}
+
+.big_image {
+  position: absolute;
+  z-index: 99999999;
+  top: 12%;
+  left: 20%;
+  width: 65%;
+  height: 85%;
+  margin: 0 auto;
+}
+
+.button_close {
+  position: absolute;
+  z-index: 99999999;
+  width: 70px;
+  height: 70px;
+  margin: 2.5%;
+  top: 5%;
+  right: 5%;
+  background-color: rgba(29, 29, 29, 0.404);
+  border-radius: 50%;
+  border: 2px solid rgb(173, 173, 173);
+  color: rgb(173, 173, 173);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button_close:hover {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.61);
+  cursor: pointer;
+}

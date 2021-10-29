@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "season": "Summer",
+    "coast": 999999,
+    "brand": "BMW",
+    "model": "E36 coupe",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "M42",
+    "hp": "140",
+    "name": "Evgeny",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [
+      {
+        "id": 0,
+        "src": "https://sun9-75.userapi.com/impg/0TcoAKDB5ZWk_rQKSrfI9JOdM1xv5Spfk_7gGQ/Lu4FPzta5g8.jpg?size=1920x1440&quality=96&sign=8204c0dacd56f382a485cc276de1406d&type=album"
+      },
+      {
+        "id": 1,
+        "src": "https://sun9-42.userapi.com/impg/UQv8PlxXb8AF6gRA9pkn5yCD1L-la2bBg8GFbQ/msWbuR8jBik.jpg?size=1920x1439&quality=96&sign=ac9cd0cd97a1ac06e6f7ea389dc0add8&type=album"
+      },
+      {
+        "id": 2,
+        "src": "https://sun9-20.userapi.com/impg/W45LkVsVbESUVVE_5yIlIA7qfYvhEx0cjFY7kw/1hsUUSgw1fc.jpg?size=1920x1440&quality=96&sign=f7943e900985fb3af61491173e1d0cec&type=album"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "season": "Summer",
+    "coast": 3400,
+    "brand": "BMW",
+    "model": "E39",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "M52B25",
+    "hp": "180",
+    "name": "Tolyk",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [
+      {
+        "id": 0,
+        "src": "https://sun9-85.userapi.com/impg/66J6nOQTC7SdhusnJKlQf5nwZLlKdmfvmM0l0g/wSjk2io9eGQ.jpg?size=800x600&quality=96&sign=750772b628238d0734823901d9f2c00a&type=album"
+      },
+      {
+        "id": 1,
+        "src": "https://sun9-50.userapi.com/impg/Wxiw6HdarPo6Z5JF9XpS99dc3yUNWDToJ1iMXw/ptFgqb_VOK4.jpg?size=800x600&quality=96&sign=9274f275733667fe98ab80cc26218301&type=album"
+      },
+      {
+        "id": 2,
+        "src": "https://sun9-61.userapi.com/impg/8LcYdPsXA9iTIC_mdd-RUv9pBlkO8k2E-qJtyw/4NW1C81OwXY.jpg?size=1280x960&quality=96&sign=ac5f46609a94ccf7d1de28d84f934fc4&type=album"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "season": "Summer",
+    "coast": 2200,
+    "brand": "BMW",
+    "model": "E30 coupe",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "M20B25",
+    "hp": "160",
+    "name": "Tolyk",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [{ "id": 0, "src": "https://a.d-cd.net/SgAAAgBbquA-960.jpg" }]
+  },
+  {
+    "id": 4,
+    "season": "Summer",
+    "coast": 2200,
+    "brand": "BMW",
+    "model": "E21 coupe",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "M20B20",
+    "hp": "150",
+    "name": "Tolyk",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [{ "id": 0, "src": "https://img3.goodfon.ru/wallpaper/nbig/f/5f/bmw-e21-red.jpg" }]
+  },
+  {
+    "id": 5,
+    "season": "Summer",
+    "coast": 7400,
+    "brand": "Toyta",
+    "model": "Mark 2",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "2JZ GTE",
+    "hp": "280",
+    "name": "Tolyk",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [{ "id": 0, "src": "https://a.d-cd.net/43c8881s-960.jpg" }]
+  },
+  {
+    "id": 6,
+    "season": "Winter",
+    "coast": 800,
+    "brand": "Vaz",
+    "model": "2101",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "Vosmiklop:)",
+    "hp": "59",
+    "name": "Tolyk",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [{ "id": 0, "src": "https://a.d-cd.net/a442175s-960.jpg" }]
+  },
+  {
+    "id": 7,
+    "season": "Winter",
+    "coast": 1000,
+    "brand": "Vaz",
+    "model": "2102",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "Vosmiklop:)",
+    "hp": "59",
+    "name": "Tolyk",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [
+      {
+        "id": 0,
+        "src": "https://autoreview.ru/images/gallery/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D0%BF%D0%BE%D1%80%D1%82/%D0%A0%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/%D0%94%D1%80%D0%B8%D1%84%D1%82/2018/WDB_Final/05.jpg"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "season": "Winter",
+    "coast": 400,
+    "brand": "Vaz",
+    "model": "2105",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "Vosmiklop:)",
+    "hp": "59",
+    "name": "Tolyk",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [
+      {
+        "id": 0,
+        "src": "https://www.shop-tuning.ru/wa-data/public/shop/products/24/65/696524/images/114292/114292.750x0.jpg"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "season": "Winter",
+    "coast": 600,
+    "brand": "Vaz",
+    "model": "2101",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "Vosmiklop:)",
+    "hp": "59",
+    "name": "Tolyk",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [{ "id": 0, "src": "https://live.staticflickr.com/65535/33924614798_3c1319a12d_b.jpg" }]
+  },
+  {
+    "id": 10,
+    "season": "Summer",
+    "coast": 4200,
+    "brand": "BMW",
+    "model": "E46",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "M54B30",
+    "hp": "225",
+    "name": "Tolyk",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [{ "id": 0, "src": "https://a.d-cd.net/gj7FriuInWPiTVRtbXtfaKwnHOY-960.jpg" }]
+  },
+  {
+    "id": 11,
+    "season": "Summer",
+    "coast": 16400,
+    "brand": "Nissan",
+    "model": "Skyline R32",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "RB26DETT",
+    "hp": "280",
+    "name": "Tolyk",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [
+      {
+        "id": 0,
+        "src": "https://motorglobe.org/wp-content/uploads/2017/11/001-1_Nissan_Skyline_GT_R_R32_Nissan_NISMO.jpg"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "season": "Summer",
+    "coast": 11200,
+    "brand": "Nissan",
+    "model": "Silvia s15",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "SR20DET",
+    "hp": "200",
+    "name": "Tolyk",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [
+      { "id": 0, "src": "https://lowdaily.ru/wp-content/uploads/2020/04/DSC08046-1024x576.jpg" }
+    ]
+  },
+  {
+    "id": 13,
+    "season": "Summer",
+    "coast": 10800,
+    "brand": "Nissan",
+    "model": "Silvia s14",
+    "desciption": "Pushka, podnimaet asfalt:)",
+    "engine": "SR20DET",
+    "hp": "200",
+    "name": "Tolyk",
+    "tel": "+375(29)7532444",
+    "place": "Minsk",
+    "img": [{ "id": 0, "src": "https://s1.1zoom.ru/b5050/633/426620-Kycb_2560x1440.jpg" }]
+  }
+]

@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import style from "./ContactUs.module.css";
 
 export function ContactUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className={style.wrap}>

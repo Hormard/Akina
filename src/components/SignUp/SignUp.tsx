@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { useParams } from "react-router";
 import slides from "../Slider/slides.json";
 import styles from "./SignUp.module.css";
@@ -8,6 +8,9 @@ interface IParams {
 }
 
 export function SignUp() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const params: IParams = useParams();
   const id: number = Number(params.id);
   const { title } = slides[id];

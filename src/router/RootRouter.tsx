@@ -8,6 +8,7 @@ import { Media } from "../components/Media";
 import { Shop } from "../components/Shop";
 import { SignUp } from "../components/SignUp";
 import { Footer } from "../components/Footer";
+import { Car } from "../components/Car/Car";
 
 const active: React.CSSProperties = {
   borderBottom: "2px solid rgb(22, 157, 247)",
@@ -27,7 +28,7 @@ export function RootRouter() {
           <NavLink activeStyle={active} className={styles.link} to="/events">
             <CalendarSvg /> Events
           </NavLink>
-          <NavLink activeStyle={active} className={styles.link} to="/shop">
+          <NavLink activeStyle={active} className={styles.link} to="/market">
             <ShopSvg /> Market
           </NavLink>
           <NavLink activeStyle={active} className={styles.link} to="/contacts">
@@ -58,6 +59,10 @@ export function RootRouter() {
         </Route>
         <Route exact path="/signUp/:id">
           <SignUp />
+        </Route>
+        <Route exact path="/Car/:id">
+          <Car />
+          <Footer />
         </Route>
       </Switch>
     </BrowserRouter>

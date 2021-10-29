@@ -16,10 +16,13 @@ export function Weather() {
   const [ebisuDate, setEdisuDate] = useState(new Date());
   const [ebisuTime, setEbisuTime] = useState("");
 
-  setInterval(() => {
-    setLipkiDate(new Date());
-    setEdisuDate(new Date());
-  }, 1000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLipkiDate(new Date());
+      setEdisuDate(new Date());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     setLipkiTime(lipkiDate.toLocaleTimeString());

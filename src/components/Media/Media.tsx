@@ -1,9 +1,11 @@
 import styles from "./Media.module.css";
 import images from "./images.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { ZoomCard } from "../ZoomCard";
+import { IImg } from "../ZoomCard/ZoomCard";
 
 export function Media() {
-  const [activatedImage, setActivatedImage] = useState([{ id: 99, src: "", type: "" }]);
+  const [activatedImage, setActivatedImage] = useState([{ id: 999, src: "" }]);
   const [type, setType] = useState("All" || "Lipki" || "Pro-2");
   const [renderedImages, setImages] = useState(images);
 
@@ -11,6 +13,10 @@ export function Media() {
     setImages(images);
     setType("All");
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const onClickLipki = () => {
     setType("Lipki");
@@ -29,23 +35,15 @@ export function Media() {
     setActivatedImage(img);
   };
 
-  const onClickClose = () => {
-    setActivatedImage([{ id: 99, src: "", type: "" }]);
+  const onClickClose = (closeImg: IImg[]) => {
+    setActivatedImage(closeImg);
   };
 
   return (
     <>
       <div className={styles.container}>
-        {activatedImage[0].id === 99 ? null : (
-          <div className={styles.big_container}>
-            <div className={styles.dark}></div>
-            <button className={styles.button_close} onClick={onClickClose}>
-              ╳
-            </button>
-            {activatedImage.map((item) => {
-              return <img className={styles.big_image} key={item.id} src={item.src} alt="img" />;
-            })}
-          </div>
+        {activatedImage[0].id === 999 ? null : (
+          <ZoomCard onClick={onClickClose} activatedImage={activatedImage} />
         )}
         <div className={styles.controller}>
           <button

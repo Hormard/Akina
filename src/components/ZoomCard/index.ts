@@ -1,0 +1,1 @@
+export { ZoomCard } from "./ZoomCard";

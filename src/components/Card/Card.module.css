@@ -1,0 +1,52 @@
+.cars_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  width: 90%;
+  height: 60%;
+  margin-left: 4%;
+  margin-bottom: 1%;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+
+.cars_container:hover {
+  border: 2px solid rgb(22, 142, 223);
+}
+
+.cars_container:hover .info {
+  color: rgb(252, 0, 0);
+}
+
+.card_img {
+  width: 25%;
+  height: 100%;
+}
+
+.info {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(22, 142, 223);
+}
+
+.season {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.coast {
+  padding: 0.5%;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: rgb(255, 238, 0);
+}
+
+.place {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}

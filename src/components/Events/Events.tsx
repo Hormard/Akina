@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import events from "./events.json";
 import styles from "./Events.module.css";
 
 export function Events() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className={styles.container}>

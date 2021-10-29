@@ -2,8 +2,12 @@ import styles from "./Home.module.css";
 import { CircleSvg, FlagSvg, StickSvg } from "../../assets/svg/sgv";
 import { Slider } from "../Slider";
 import { Weather } from "../Weather";
+import { useEffect } from "react";
 
 export function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Slider />
