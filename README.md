@@ -1,1 +1,1 @@
-# Akina-diploma
+# Akina
