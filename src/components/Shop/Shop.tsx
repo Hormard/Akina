@@ -1,9 +1,12 @@
 import styles from "./Shop.module.css";
-import cars from "./cars.json";
 import { Card } from "../Card";
 import { useEffect, useRef, useState } from "react";
+import { useSelector } from "react-redux";
+import { IState } from "../../redux/store";
 
 export function Shop() {
+  const cars = useSelector((state: IState) => state.cars.cars);
+
   const [season, setSeason] = useState("All" || "Summer" || "Winter");
   const [minCoast, setMinCoast] = useState(0);
   const [maxCoast, setMaxCoast] = useState(9999999);
@@ -12,14 +15,15 @@ export function Shop() {
   const minValue: any = useRef();
   const maxValue: any = useRef();
 
-  const brands: string[] = [];
+  let brands: any[] = [];
 
-  cars.forEach((item) => {
-    if (!brands.includes(item.brand)) {
-      brands.push(item.brand);
-    }
-    return brands;
+  brands = cars.map((item) => {
+    return item.brand;
   });
+
+  brands = brands.reduce((acc, item) => {
+    return acc.includes(item) ? acc : [...acc, item];
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -70,7 +74,7 @@ export function Shop() {
     });
 
     setRenderedCars(filteredCars);
-  }, [season, brand, minCoast, maxCoast]);
+  }, [season, brand, minCoast, maxCoast, cars]);
 
   return (
     <div className={styles.container}>
@@ -138,6 +142,7 @@ export function Shop() {
           />
           <p className={styles.symbol}>$</p>
         </div>
+        <h3 className={styles.filter_subtitle}>Founded: {renderedCars.length}</h3>
         <button className={styles.reset} onClick={onClickReset}>
           Reset
         </button>

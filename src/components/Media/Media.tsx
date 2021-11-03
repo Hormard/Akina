@@ -1,10 +1,13 @@
 import styles from "./Media.module.css";
-import images from "./images.json";
 import { useEffect, useState } from "react";
 import { ZoomCard } from "../ZoomCard";
-import { IImg } from "../ZoomCard/ZoomCard";
+import { IImage } from "../../redux/reducers/cars";
+import { useSelector } from "react-redux";
+import { IState } from "../../redux/store";
 
 export function Media() {
+  const images = useSelector((state: IState) => state.images.images);
+
   const [activatedImage, setActivatedImage] = useState([{ id: 999, src: "" }]);
   const [type, setType] = useState("All" || "Lipki" || "Pro-2");
   const [renderedImages, setImages] = useState(images);
@@ -35,7 +38,7 @@ export function Media() {
     setActivatedImage(img);
   };
 
-  const onClickClose = (closeImg: IImg[]) => {
+  const onClickClose = (closeImg: IImage[]) => {
     setActivatedImage(closeImg);
   };
 

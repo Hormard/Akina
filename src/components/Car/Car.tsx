@@ -1,16 +1,19 @@
 import styles from "./Car.module.css";
-import cars from "../Shop/cars.json";
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import { SmallSlider } from "../SmallSlider";
 import { ZoomCard } from "../ZoomCard";
-import { IImg } from "../ZoomCard/ZoomCard";
+import { useSelector } from "react-redux";
+import { IState } from "../../redux/store";
+import { IImage } from "../../redux/reducers/cars";
 
 interface IParams {
   id: string;
 }
 
 export function Car() {
+  const cars = useSelector((state: IState) => state.cars.cars);
+
   const [activatedImage, setActivatedImage] = useState([{ id: 999, src: "" }]);
 
   const params: IParams = useParams();
@@ -26,11 +29,11 @@ export function Car() {
     setActivatedImage(img);
   };
 
-  const onClickZoomSlider = (img: IImg[]) => {
+  const onClickZoomSlider = (img: IImage[]) => {
     setActivatedImage(img);
   };
 
-  const onClickClose = (closeImg: IImg[]) => {
+  const onClickClose = (closeImg: IImage[]) => {
     setActivatedImage(closeImg);
   };
 

@@ -46,6 +46,11 @@
   border-top: 0.5px solid rgba(199, 199, 199, 0.767);
 }
 
+.date_container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .event_title {
   margin-bottom: 3%;
   font-size: 23px;
@@ -64,4 +69,24 @@
   font-weight: 600;
   font-family: "Raleway", sans-serif;
   color: rgb(105, 105, 105);
+}
+
+.button {
+  width: 100px;
+  height: 20px;
+  border: 1px solid rgb(22, 142, 223);
+  border-radius: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: #fff;
+  color: rgb(22, 142, 223);
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+.button:hover {
+  background-color: rgb(22, 142, 223);
+  color: #fff;
+  transition: all 0.8s;
 }

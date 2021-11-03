@@ -9,6 +9,7 @@ import { Shop } from "../components/Shop";
 import { SignUp } from "../components/SignUp";
 import { Footer } from "../components/Footer";
 import { Car } from "../components/Car/Car";
+import { PilotsList } from "../components/PilotsList";
 
 const active: React.CSSProperties = {
   borderBottom: "2px solid rgb(22, 157, 247)",
@@ -60,8 +61,12 @@ export function RootRouter() {
         <Route exact path="/signUp/:id">
           <SignUp />
         </Route>
-        <Route exact path="/Car/:id">
+        <Route exact path="/car/:id">
           <Car />
+          <Footer />
+        </Route>
+        <Route exact path="/pilots/:id">
+          <PilotsList />
           <Footer />
         </Route>
       </Switch>

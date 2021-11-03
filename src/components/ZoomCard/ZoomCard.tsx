@@ -1,13 +1,9 @@
+import { IImage } from "../../redux/reducers/cars";
 import styles from "./ZoomCard.module.css";
 
-export interface IImg {
-  id: number;
-  src: string;
-}
-
 interface IZoom {
-  onClick(close: IImg[]): void;
-  activatedImage: IImg[];
+  onClick(close: IImage[]): void;
+  activatedImage: IImage[];
 }
 
 export function ZoomCard({ onClick, activatedImage }: IZoom) {

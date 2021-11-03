@@ -1,10 +1,10 @@
 import style from "./SmallSlider.module.css";
 import { useRef, useState } from "react";
 import { ICard } from "../Card/Card";
-import { IImg } from "../ZoomCard/ZoomCard";
+import { IImage } from "../../redux/reducers/cars";
 
 interface ISlider {
-  onClick(img: IImg[]): void;
+  onClick(img: IImage[]): void;
   slides: ICard;
 }
 

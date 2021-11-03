@@ -1,11 +1,21 @@
 import { useEffect } from "react";
-import events from "./events.json";
+import { useSelector } from "react-redux";
+import { useHistory } from "react-router";
+import { IState } from "../../redux/store";
 import styles from "./Events.module.css";
 
 export function Events() {
+  const history = useHistory();
+  const events = useSelector((state: IState) => state.events.events);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const onClickPilots = (id: number) => {
+    history.push(`/pilots/${id}`);
+  };
+
   return (
     <>
       <div className={styles.container}>
@@ -23,7 +33,12 @@ export function Events() {
                   <h2 className={styles.event_title}>{item.title}</h2>
                   <p className={styles.event_place}>{item.place}</p>
                 </div>
-                <p className={styles.event_date}>{item.date}</p>
+                <div className={styles.date_container}>
+                  <p className={styles.event_date}>{item.date}</p>
+                  <button className={styles.button} onClick={() => onClickPilots(item.id)}>
+                    Show pilots
+                  </button>
+                </div>
               </div>
             );
           })}

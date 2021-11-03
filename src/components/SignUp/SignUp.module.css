@@ -176,6 +176,11 @@ table {
   transition: all 1s;
 }
 
+.input:invalid {
+  border-bottom: 3px solid rgb(255, 0, 0);
+  transition: all 1s;
+}
+
 @keyframes input {
   from {
     width: 0;
@@ -202,4 +207,30 @@ table {
 .button:hover {
   background-color: rgb(53, 53, 53);
   color: rgb(19, 62, 255);
+}
+
+.err {
+  margin-bottom: 0.5%;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+}
+
+.errorInput {
+  border: none;
+  border-bottom: 3px solid rgb(255, 0, 0);
+  transition: all 1s;
+}
+
+.errorInput::placeholder {
+  font-family: "Raleway", sans-serif;
+}
+
+.errorInput:focus {
+  outline: none;
+  animation-duration: 2s;
+  animation-name: input;
+  border-bottom: 3px solid rgb(22, 157, 247);
+  transition: all 1s;
 }
