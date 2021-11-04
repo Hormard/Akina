@@ -44,3 +44,27 @@
 .carTable {
   width: 40%;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .pilotContainer {
+    width: 100%;
+  }
+
+  .subTitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-top: 20%;
+  }
+
+  .subTitle {
+    text-align: center;
+  }
+}

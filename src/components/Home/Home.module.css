@@ -32,3 +32,14 @@
   color: rgb(105, 105, 105);
   font-weight: 200;
 }
+
+@media (max-width: 767px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 90%;
+    margin-bottom: 20%;
+  }
+}

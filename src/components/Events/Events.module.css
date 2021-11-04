@@ -90,3 +90,29 @@
   color: #fff;
   transition: all 0.8s;
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: 85%;
+  }
+
+  .events {
+    flex-direction: column;
+    margin-bottom: 3%;
+  }
+
+  .event_container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-top: 20%;
+    margin-bottom: 380px;
+  }
+
+  .event_container {
+    padding-top: 15%;
+  }
+}

@@ -46,3 +46,45 @@
   margin-bottom: 5%;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .wrap {
+    padding-bottom: 30.5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrap {
+    padding-top: 70px;
+    width: 96%;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 35px;
+    margin-bottom: 8%;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .smallContainer {
+    margin-bottom: 6%;
+    align-items: center;
+  }
+
+  .subtitle {
+    margin-bottom: 3%;
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  .link {
+    font-size: 15px;
+  }
+}

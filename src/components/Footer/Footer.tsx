@@ -12,7 +12,7 @@ export function Footer() {
         <div className={styles.information_container}>
           <h4 className={styles.title}>About</h4>
           <div className={styles.info}>
-            <Link to="/" className={styles.home_link}>
+            <Link to="/Akina/" className={styles.home_link}>
               AKINA-DRIFT
             </Link>
             <p className={styles.information_text}>
@@ -26,19 +26,19 @@ export function Footer() {
         <div className={styles.links_container}>
           <h4 className={styles.title}>Links</h4>
           <div className={styles.link_list}>
-            <Link className={styles.link} to="/">
+            <Link className={styles.link} to="/Akina/">
               Home
             </Link>
-            <NavLink activeStyle={active} className={styles.link} to="/media">
+            <NavLink activeStyle={active} className={styles.link} to="/Akina/media">
               Media
             </NavLink>
-            <NavLink activeStyle={active} className={styles.link} to="/events">
+            <NavLink activeStyle={active} className={styles.link} to="/Akina/events">
               Events
             </NavLink>
-            <NavLink activeStyle={active} className={styles.link} to="/market">
+            <NavLink activeStyle={active} className={styles.link} to="/Akina/market">
               Shop
             </NavLink>
-            <NavLink activeStyle={active} className={styles.link} to="/contacts">
+            <NavLink activeStyle={active} className={styles.link} to="/Akina/contacts">
               Contact us
             </NavLink>
           </div>

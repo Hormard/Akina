@@ -10,6 +10,7 @@
   position: absolute;
   z-index: 91;
   width: 300%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -91,4 +92,31 @@
   border-radius: 50%;
   background-color: rgba(29, 29, 29, 0.87);
   border: 2px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 767px) {
+  .button_prev {
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
+  }
+
+  .button_next {
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
+  }
+
+  .circle {
+    width: 25px;
+    height: 25px;
+    margin: 0.8%;
+    border-radius: 50%;
+  }
+
+  .activated_circle {
+    width: 25px;
+    height: 25px;
+    margin: 0.8%;
+  }
 }

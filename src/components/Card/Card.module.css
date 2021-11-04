@@ -50,3 +50,26 @@
   font-weight: 500;
   font-size: 16px;
 }
+
+@media (max-width: 767px) {
+  .season {
+    display: none;
+  }
+
+  .cars_container {
+    width: 95%;
+    margin-left: 0;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+
+  .place {
+    font-size: 10px;
+  }
+
+  .coast {
+    font-size: 12px;
+  }
+}

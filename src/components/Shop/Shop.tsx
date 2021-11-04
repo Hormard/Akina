@@ -3,6 +3,7 @@ import { Card } from "../Card";
 import { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { IState } from "../../redux/store";
+import { Filter } from "../Filter";
 
 export function Shop() {
   const cars = useSelector((state: IState) => state.cars.cars);
@@ -12,6 +13,8 @@ export function Shop() {
   const [maxCoast, setMaxCoast] = useState(9999999);
   const [brand, setBrand] = useState("All");
   const [renderedCars, setRenderedCars] = useState(cars);
+  const [isOpened, setIsOpened] = useState(false);
+
   const minValue: any = useRef();
   const maxValue: any = useRef();
 
@@ -54,6 +57,10 @@ export function Shop() {
     setMaxCoast(9999999);
   };
 
+  const onClickFilter = () => {
+    setIsOpened(!isOpened);
+  };
+
   useEffect(() => {
     let filteredCars = cars;
 
@@ -78,75 +85,47 @@ export function Shop() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.filter_container}>
-        <h1 className={styles.filter_title}>FILTERS</h1>
-        <h3 className={styles.filter_subtitle}>Season</h3>
-        <div className={styles.small_container}>
-          <button
-            className={season === "All" ? styles.activated_button : styles.button}
-            onClick={(e: any) => onClickSeason(e.target.outerText)}
-          >
-            All
-          </button>
-          <button
-            className={season === "Summer" ? styles.activated_button : styles.button}
-            onClick={(e: any) => onClickSeason(e.target.outerText)}
-          >
-            Summer
-          </button>
-          <button
-            className={season === "Winter" ? styles.activated_button : styles.button}
-            onClick={(e: any) => onClickSeason(e.target.outerText)}
-          >
-            Winter
-          </button>
-        </div>
-        <h3 className={styles.filter_subtitle}>Brand</h3>
-        <div className={styles.small_container}>
-          <select
-            className={styles.select}
-            name="brand"
-            id="brand"
-            onChange={(e: any) => onChangeBrand(e.target.value)}
-          >
-            <option className={styles.option} value="All">
-              All
-            </option>
-            {brands.map((item, index) => {
-              return (
-                <option className={styles.option} key={index} value={item}>
-                  {item}
-                </option>
-              );
-            })}
-          </select>
-        </div>
-        <h3 className={styles.filter_subtitle}>Coast</h3>
-        <div className={styles.small_container}>
-          <p className={styles.coast}>from</p>
-          <input
-            className={styles.input}
-            type="number"
-            onChange={(e) => onChangeMin(e.target.value)}
-            placeholder={String(minCoast)}
-            ref={minValue}
-          />
-          <p className={styles.symbol}>$</p>
-          <p className={styles.coast}>to</p>
-          <input
-            className={styles.input}
-            type="number"
-            onChange={(e) => onChangeMax(e.target.value)}
-            placeholder={String(maxCoast)}
-            ref={maxValue}
-          />
-          <p className={styles.symbol}>$</p>
-        </div>
-        <h3 className={styles.filter_subtitle}>Founded: {renderedCars.length}</h3>
-        <button className={styles.reset} onClick={onClickReset}>
-          Reset
+      {window.innerWidth > 768 ? (
+        <Filter
+          season={season}
+          brands={brands}
+          minCoast={minCoast}
+          minValue={minValue}
+          maxCoast={maxCoast}
+          maxValue={maxValue}
+          renderedCars={renderedCars}
+          onClickSeason={onClickSeason}
+          onChangeBrand={onChangeBrand}
+          onChangeMin={onChangeMin}
+          onChangeMax={onChangeMax}
+          onClickReset={onClickReset}
+        />
+      ) : (
+        <button onClick={onClickFilter} className={styles.button_filter}>
+          Show filters
         </button>
-      </div>
+      )}
+      {isOpened ? (
+        <div className={styles.modal_filter}>
+          <button onClick={onClickFilter} className={styles.button_filter_active}>
+            Close filters
+          </button>
+          <Filter
+            season={season}
+            brands={brands}
+            minCoast={minCoast}
+            minValue={minValue}
+            maxCoast={maxCoast}
+            maxValue={maxValue}
+            renderedCars={renderedCars}
+            onClickSeason={onClickSeason}
+            onChangeBrand={onChangeBrand}
+            onChangeMin={onChangeMin}
+            onChangeMax={onChangeMax}
+            onClickReset={onClickReset}
+          />
+        </div>
+      ) : null}
       <div className={styles.cards}>
         {renderedCars.length > 0 ? (
           renderedCars.map((item) => {

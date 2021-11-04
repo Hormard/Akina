@@ -93,7 +93,7 @@ export function SignUp() {
 
       event[0].pilots.push(pilot);
       dispatch({ type: ACTIONS.ADD_PILOT, event });
-      history.push("/");
+      history.push("/Akina/");
     }
   };
 

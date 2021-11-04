@@ -77,3 +77,32 @@
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.466);
 }
+
+@media (max-width: 768px) {
+  .btn {
+    top: 70%;
+    left: 38%;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 27px;
+  }
+
+  .text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .btn {
+    position: absolute;
+    top: 75%;
+    left: 29%;
+    z-index: 100;
+    width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 20px;
+  }
+}
