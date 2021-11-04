@@ -23,7 +23,7 @@ export function Card({ id, season, coast, brand, model, place, img }: ICard) {
   const history = useHistory();
 
   const onClickSelect = (id: number) => {
-    history.push(`/car/${id}`);
+    history.push(`/Akina/car/${id}`);
   };
   return (
     <div className={styles.cars_container} onClick={() => onClickSelect(id)}>

@@ -13,7 +13,7 @@ export function Events() {
   }, []);
 
   const onClickPilots = (id: number) => {
-    history.push(`/pilots/${id}`);
+    history.push(`/Akina/pilots/${id}`);
   };
 
   return (

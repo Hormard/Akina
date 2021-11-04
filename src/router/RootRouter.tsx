@@ -19,53 +19,53 @@ export function RootRouter() {
   return (
     <BrowserRouter>
       <nav className={styles.nav}>
-        <Link className={styles.home_link} to="/">
+        <Link className={styles.home_link} to="/Akina/">
           AKINA-DRIFT
         </Link>
         <div className={styles.other}>
-          <NavLink activeStyle={active} className={styles.link} to="/media">
+          <NavLink activeStyle={active} className={styles.link} to="/Akina/media">
             <MediaSvg /> Media
           </NavLink>
-          <NavLink activeStyle={active} className={styles.link} to="/events">
+          <NavLink activeStyle={active} className={styles.link} to="/Akina/events">
             <CalendarSvg /> Events
           </NavLink>
-          <NavLink activeStyle={active} className={styles.link} to="/market">
+          <NavLink activeStyle={active} className={styles.link} to="/Akina/market">
             <ShopSvg /> Market
           </NavLink>
-          <NavLink activeStyle={active} className={styles.link} to="/contacts">
+          <NavLink activeStyle={active} className={styles.link} to="/Akina/contacts">
             <MailSvg /> Contact us
           </NavLink>
         </div>
       </nav>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/Akina/">
           <Home />
           <Footer />
         </Route>
-        <Route exact path="/media">
+        <Route exact path="/Akina/media">
           <Media />
           <Footer />
         </Route>
-        <Route exact path="/events">
+        <Route exact path="/Akina/events">
           <Events />
           <Footer />
         </Route>
-        <Route exact path="/market">
+        <Route exact path="/Akina/market">
           <Shop />
           <Footer />
         </Route>
-        <Route exact path="/contacts">
+        <Route exact path="/Akina/contacts">
           <ContactUs />
           <Footer />
         </Route>
-        <Route exact path="/signUp/:id">
+        <Route exact path="/Akina/signUp/:id">
           <SignUp />
         </Route>
-        <Route exact path="/car/:id">
+        <Route exact path="/Akina/car/:id">
           <Car />
           <Footer />
         </Route>
-        <Route exact path="/pilots/:id">
+        <Route exact path="/Akina/pilots/:id">
           <PilotsList />
           <Footer />
         </Route>

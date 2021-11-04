@@ -1,21 +1,21 @@
 [
   {
     "id": 0,
-    "src": "/images/slides/slide_1.jpg",
+    "src": "./images/slides/slide_1.jpg",
     "title": "LIPKI DRIFT",
     "text": "Wet surface training",
     "buttonText": "Sign up"
   },
   {
     "id": 1,
-    "src": "/images/slides/slide_2.jpg",
+    "src": "./images/slides/slide_2.jpg",
     "title": "Matsuri competitions",
     "text": "stage 5 - november 12",
     "buttonText": "Sign up"
   },
   {
     "id": 2,
-    "src": "/images/slides/slide_3.jpg",
+    "src": "./images/slides/slide_3.jpg",
     "title": "Drift cars market",
     "text": "Don't want to build a project, then buy a ready-made one",
     "buttonText": "Go to market"

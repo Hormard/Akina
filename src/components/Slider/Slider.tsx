@@ -50,11 +50,11 @@ export function Slider() {
 
   const onClickSlide = (id: number) => {
     if (id === 0) {
-      history.push(`/signUp/${id}`);
+      history.push(`/Akina/signUp/${id}`);
     } else if (id === 1) {
-      history.push(`/signUp/${id}`);
+      history.push(`/Akina/signUp/${id}`);
     } else if (id === 2) {
-      history.push("/market");
+      history.push("/Akina/market");
     }
   };
 
