@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Akina/static/css/main.19d872cc.chunk.css",
-    "main.js": "/Akina/static/js/main.13813534.chunk.js",
-    "main.js.map": "/Akina/static/js/main.13813534.chunk.js.map",
+    "main.js": "/Akina/static/js/main.d6dad65f.chunk.js",
+    "main.js.map": "/Akina/static/js/main.d6dad65f.chunk.js.map",
     "runtime-main.js": "/Akina/static/js/runtime-main.a1a86d83.js",
     "runtime-main.js.map": "/Akina/static/js/runtime-main.a1a86d83.js.map",
     "static/js/2.5250ad4d.chunk.js": "/Akina/static/js/2.5250ad4d.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a1a86d83.js",
     "static/js/2.5250ad4d.chunk.js",
     "static/css/main.19d872cc.chunk.css",
-    "static/js/main.13813534.chunk.js"
+    "static/js/main.d6dad65f.chunk.js"
   ]
 }
